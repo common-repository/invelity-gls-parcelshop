@@ -1,0 +1,565 @@
+/*
+* Invelity public css
+*/
+
+.gls_parcel_shop_map_init {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+#big-canvas {
+    margin-top: 100px;
+    width: 600px;
+    height: 400px;
+    border: solid 1px red;
+}
+
+#ajaxresult {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.inv_gls_parcelshop_map {
+    height: 700px;
+    width: 650px;
+    max-height: 100%;
+}
+
+.inv_gls_parcelshop_map_container {
+    display: none;
+    background: #929ca0;
+    float: left;
+    width: 100%;
+}
+
+.invelity-gls-parcelshop-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    align-items: center;
+}
+.invelity-gls-parcelshop-box >div:first-of-type{
+    display: flex;
+    align-items: center;
+}
+
+
+.inv_gls_parcelshop_map_section_container {
+    float: left;
+    width: 70%;
+    display: block;
+    height: 100%;
+    display: flex;
+}
+
+#inv_gls_map_init_container {
+    background: #4c4c4c;
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+}
+
+#inv_gls_map_init_container.show {
+    display: block;
+}
+
+
+.inv_gls_parcelshop_pop_up_wrapper {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    overflow: auto;
+    z-index: 100001;
+    width: 100%;
+    height: 80vh;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    display: block;
+    width: 80%;
+    max-height: initial;
+    overflow: hidden;
+    top: 5vh;
+    margin: 0 auto;
+    padding-top: 45px
+}
+.inv_gls_parcelshop_list_shops_wrapper{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.inv_gls_parcelshop_pop_up_wrapper .inv_gls_parcelshop_pop_up_container {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+
+}
+
+.inv_gls_parcelshop_pop_up_wrapper .inv_gls_parcelshop_pop_up_container {
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+    outline: currentcolor none medium;
+    text-align: left;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.inv_gls_parcelshop_pop_up_wrapper .inv_gls_parcelshop_map_container {
+    display: block;
+}
+
+.inv_gls_parcelshop_pop-up_list {
+    float: left;
+    width: 30%;
+    padding-top: 2em;
+    margin-bottom: 0em;
+    padding-right: 1em;
+    border-top: 5px solid #fdc344;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.inv_gls_parcelshop_pop-up_list img {
+    max-width: 75px;
+    margin-left: 2em;
+}
+
+
+.inv_gls_parcelshop_pop-up_list h6 {
+    font-size: 18px!important;
+    color: #333!important;
+    font-weight: 600!important;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 2em;
+    width:80%;
+    text-transform: none;
+}
+
+#close-invelity-gls-parcel-shop-modal {
+    white-space: nowrap;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    right: 0px;
+    position: absolute;
+    top: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.inv_gls_parcelshop_pop-up_list .inv_gls_parcelshop_finder_field {
+    position: relative;
+    margin-left: 2em;
+}
+
+.inv_gls_parcelshop_pop-up_list .inv_gls_parcelshop_finder_field #inv_gls_parcelshop_find {
+    font-size: 18px;
+    background: #f3f3f3;
+    border: 1px solid #d7d7d7;
+    padding-left: 10px;
+    padding-right: 25px;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.inv_gls_parcelshop_pop-up_list .inv_geolocation {
+    color: #333171;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    display: block;
+    margin-top: 0em;
+}
+
+.inv_gls_parcelshop_list_shops {
+    list-style: none;
+    margin: 0;
+    height: 415px;
+    margin-bottom: 10px;
+
+}
+.checkbox-custom-label{
+    display: flex;
+}
+
+
+.inv_gls_parcelshop_list_shop {
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 0.5em;
+    padding-left: 2em;
+    margin-bottom: 0px!important;
+}
+
+.inv_gls_parcelshop_list_shop:hover {
+    background: #f3f3f3;
+    cursor: pointer;
+}
+
+.inv_gls_parcelshop_list_shop.active {
+    background: #f3f3f3;
+
+}
+
+.inv_gls_parcelshop_list_shop_additional_info {
+    display: none;
+}
+
+.inv_gls_parcelshop_list_shop.active .inv_gls_parcelshop_list_shop_additional_info {
+    display: block;
+}
+
+.inv_gls_parcelshop_list_shop  .inv_gls_parcelshop_list_shop_header{
+    position: relative;
+    padding-right: 25px
+}
+.inv_gls_parcelshop_list_shop .inv_gls_parcelshop_list_shop_header h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.inv_gls_parcelshop_list_shop .inv_gls_parcelshop_list_shop_header p {
+    font-size: 16px;
+    color: #6d6d6d;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.inv_gls_parcelshop_pick_shop {
+    background: #333171;
+    color: white;
+    padding: 10px 25px;
+}
+
+.inv_gls_parcelshop_pick_shop:hover {
+    text-decoration: underline;
+}
+
+.gg-search {
+    position: absolute;
+    top: 1.2em;
+    right: 1.5em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    -webkit-transform: scale(var(--ggs, 1));
+    -ms-transform: scale(var(--ggs, 1));
+    transform: scale(var(--ggs, 1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px
+}
+
+.gg-search::after {
+    content: "";
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px
+}
+
+.gg-check-o {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    -webkit-transform: scale(var(--ggs, 1));
+    -ms-transform: scale(var(--ggs, 1));
+    transform: scale(var(--ggs, 1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 100px
+}
+
+.gg-check-o::after {
+    content: "";
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+    width: 6px;
+    height: 10px;
+    border-color: currentColor;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.gg-close-o {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    -webkit-transform: scale(var(--ggs, 1));
+    -ms-transform: scale(var(--ggs, 1));
+    transform: scale(var(--ggs, 1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 40px;
+    margin-left: 10px;;
+}
+
+.gg-close-o::after,
+.gg-close-o::before {
+    content: "";
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background: currentColor;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 3px
+}
+
+.gg-close-o::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.gg-pin {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    -webkit-transform: rotate(45deg) scale(var(--ggs, 1));
+    -ms-transform: rotate(45deg) scale(var(--ggs, 1));
+    transform: rotate(45deg) scale(var(--ggs, 1));
+    width: 18px;
+    height: 18px;
+    border-radius: 100% 100% 0 100%;
+    border: 2px solid;
+    margin-top: -4px;
+    margin-right: 10px;
+}
+
+.gg-pin::before {
+    content: "";
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    top: 3px;
+    left: 3px;
+    border-radius: 40px
+}
+
+.inv_geolocation label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex!important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+#inv_gls_geolocation {
+    opacity: 0;
+    width: 0px;
+    margin:0!important;
+    display: none;
+}
+
+
+#inv_gls_parcel_shop_picked_shop_name{
+    display: block;
+    font-size: 12px;
+    text-align: left;
+}
+
+.gg-chevron-down {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    -webkit-transform: scale(var(--ggs,1));
+    -ms-transform: scale(var(--ggs,1));
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #182353;
+}
+.gg-chevron-down::after {
+    content: "";
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 4px;
+    top: 2px
+}
+
+.inv_gls_parcelshop_list_shop.active .gg-chevron-up {
+    display: block!important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #182353;
+}
+.inv_gls_parcelshop_list_shop.active .gg-chevron-down{
+    display: none;
+}
+
+.gg-chevron-up {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    -webkit-transform: scale(var(--ggs,1));
+    -ms-transform: scale(var(--ggs,1));
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-up::after {
+    content: "";
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: 4px;
+    bottom: 2px
+}
+
+#inv_gls_parcelshop_list_shops .all{
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 0.5em;
+    padding-left: 2em;
+    display: none;
+}
+
+#inv_gls_parcelshop_list_shops .all p{
+    margin: 0px;
+    color: #333171;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .inv_gls_parcelshop_pop-up_list{
+        padding-top: 1em;
+    }
+    .inv_gls_parcelshop_pop-up_list h6{
+        font-size: 15px;
+    }
+    .inv_gls_parcelshop_list_shop{
+        padding-bottom: 5em;
+    }
+    .inv_gls_parcelshop_list_shop_additional_info p{
+        font-size: 12px;
+    }
+}
+@media(max-width: 790px){
+    .inv_gls_parcelshop_pop_up_wrapper{
+        max-height: 90vh;
+        top:2%;
+    }
+    .inv_gls_parcelshop_pop-up_list{
+        width: 100%;
+    }
+    .inv_gls_parcelshop_map_section_container{
+        width: 100%;
+    }
+    .inv_gls_parcelshop_list_shops{
+        height: 150px;
+    }
+    .inv_gls_parcelshop_pop_up_wrapper .inv_gls_parcelshop_pop_up_container{
+        flex-direction: column;
+    }
+    .inv_gls_parcelshop_list_shop{
+        padding-bottom: 0px;
+    }
+
+    .inv_gls_parcelshop_map_container{
+        height: 250px;
+        max-height: 100%;
+    }
+    .inv_gls_parcelshop_pop-up_list h6{
+        font-size:15px!important;
+    }
+    .inv_gls_parcelshop_pop-up_list{
+        margin-bottom:10px;
+    }
+
+}
